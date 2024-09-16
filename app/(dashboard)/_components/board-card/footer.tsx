@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils'
 import { Button } from "@/components/ui/button";
 
 interface FooterProps {
-    isFavourite: boolean
+    isFavorite: boolean
     title: string
     authorLabel: string
     createdAtLabel: string
@@ -13,7 +13,7 @@ interface FooterProps {
 }
 
 export const Footer = ({
-                           isFavourite,
+                           isFavorite,
                            title,
                            authorLabel,
                            createdAtLabel,
@@ -23,7 +23,7 @@ export const Footer = ({
     return (
         <div className="relative p-3 bg-white">
                 <p className="text-[13px] truncate max-w-[calc(100%-20px)]">{title}</p>
-                <p className="opacity-0 group:hover:opacity-100 transition-opacity text-[11px] text-muted-foreground truncate">
+                <p className="opacity-0 group-hover:opacity-100 transition-opacity text-[11px] text-muted-foreground truncate">
                     {authorLabel}, {createdAtLabel}
                 </p>
             <button
@@ -36,7 +36,7 @@ export const Footer = ({
 
                 <Star className={cn(
                     "w-5 h-5",
-                    isFavourite && "fill-blue-600 text-blue-600"
+                    isFavorite && "fill-blue-600 text-blue-600"
 
                 )} />
             </button>

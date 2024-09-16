@@ -11,7 +11,7 @@ export const EmptyBoards = () => {
     const {mutate, pending} = useApiMutation(api.board.create)
 
     const onClick = () => {
-        if (!organization) return
+        if (!organization) return;
 
         mutate({
             orgId: organization.id,
