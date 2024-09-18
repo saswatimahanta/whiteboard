@@ -9,8 +9,7 @@ import { createRoomContext, createLiveblocksContext } from "@liveblocks/react";
 // import type { Layer, Color } from "@/types/canvas";
 
 const client = createClient({
-  publicApiKey: "pk_dev_LWHyC7TD3ruZ_mSzSDysIvACQyrybnH4Lqla6lm3ZhdMX50VKK46d77Ujwb5IGYw",
-
+  authEndpoint: "/api/liveblocks-auth",  
   // async resolveMentionSuggestions({ text }) {
   //   // Used only for Comments. Return a list of userIds that match `text`.
   //   // These userIds are used to create a mention list when typing in the
@@ -63,11 +62,11 @@ type Storage = {
 // provided by your own custom auth back end (if used). Useful for data that
 // will not change during a session, like a user's name or avatar.
 type UserMeta = {
-  // id?: string;
-  // info?: {
-  //   name?: string;
-  //   picture?: string;
-  // };
+  id?: string;
+  info?: {
+    name?: string;
+    picture?: string;
+  };
 };
 
 // Optionally, the type of custom events broadcast and listened to in this
