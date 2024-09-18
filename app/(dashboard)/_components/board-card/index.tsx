@@ -16,7 +16,7 @@ import { toast } from "sonner";
 interface BoardCardProps{
     id: string,
     title: string,
-    authorname: string,
+    authorName: string,
     authorId: string,
     createdAt: number,
     imageUrl: string,
@@ -27,7 +27,7 @@ interface BoardCardProps{
 export const BoardCard = ({
     id,    
     title,
-    authorname,
+    authorName,
     authorId,
     createdAt,
     imageUrl,
@@ -35,7 +35,7 @@ export const BoardCard = ({
     isFavorite,
 }:BoardCardProps) => {
     const { userId } = useAuth();
-    const authorLabel = userId === authorId ? "You" : authorname;
+    const authorLabel = userId === authorId ? "You" : authorName;
     const createdAtLabel = formatDistanceToNow(createdAt, {
         addSuffix: true,
     })
