@@ -8,7 +8,7 @@ import { useCallback, useState } from "react";
 import { CanvasState, CanvasMode, Camera, Color, LayerType, Point } from "@/types/canvas";
 import { CursorsPresence } from "./cursors-presence";
 import { pointerEventToCanvasPoint } from "@/lib/utils";
-import { useStorage } from "@liveblocks/react";
+import { useStorage } from "@/liveblocks.config";
 import { nanoid } from "nanoid";
 import { LiveObject } from "@liveblocks/client";
 import { LayerPreview } from "./layer-preview";
@@ -27,7 +27,7 @@ export const Canvas = ({
     mode: CanvasMode.None,
   })
   const layerIds = useStorage((root) => root.layerIds);
-  console.log(layerIds)
+  
   const [camera, setCamera] = useState<Camera>({x: 0, y: 0});
 
   const [lastUsedColor, setLastUsedColor] = useState<Color>({
@@ -126,14 +126,14 @@ export const Canvas = ({
             transform: `translate(${camera.x}px, ${camera.y}px) `
           }}
         >
-          {/* {layerIds?.map((layerId) => (
+          {layerIds.map((layerId) => (
             <LayerPreview
               key = {layerId}
               id = {layerId}
               onLayerPointerDown = {()=>{}}
-              selectionColor = {null}
+              selectionColor = "#000"
             />
-          ))} */}
+          ))}
           <CursorsPresence/>
         </g>
       </svg>
