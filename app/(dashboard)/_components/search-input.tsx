@@ -34,7 +34,7 @@ export const SearchInput = () => {
         }, { skipEmptyString: true, skipNull: true });
 
         router.push(url);
-    }, [debounceValue, router])
+    }, [debounceValue, router, value])
     return (
         <div className="w-full relative">
             <Search
