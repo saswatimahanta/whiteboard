@@ -13,10 +13,6 @@ interface ConvexClientProviderProps {
 }
 const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL as string);
 
-function Content() {
-    const messages = useQuery(api.messages.getForCurrentUser);
-    return <div>Authenticated content: {messages?.length}</div>;
-  }
 export const ConvexClientProvider = ({
     children,
 }: ConvexClientProviderProps) => {
