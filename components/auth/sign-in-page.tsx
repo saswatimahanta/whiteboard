@@ -1,40 +1,39 @@
 "use client";
 
+import "./sign-in-page.css";
 import { SignInButton } from "@clerk/nextjs";
 import girl from "../../public/Chibi Anime Girl DPs_ Adorable & Fun 1.png";
 import Image from "next/image";
 import { Button } from "../ui/button";
-import { CheckCircle2, LucideGithub } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import {LinkedInLogoIcon, GitHubLogoIcon} from "@radix-ui/react-icons"
 import Link from "next/link";
 
 export const SignInPage = () => {
     return (
-        <div style={{backgroundColor: "#FCFEFD", height: "100vh"}}>
+        <div className="main_container">
             <Image
                 src={girl}
                 alt="girl"
-                height={750}
-                className="absolute bottom-[0] right-[108px]"
+                className="girl_image"
             />
-            <div style={{background: "transparent", width: "43rem", translate: "14rem 17rem"}}>
+            <div className="content_container">
                 <div>
-                    <div>Welcome to</div>
-                    <div style={{fontSize: "8rem", marginTop: "-2rem"}}>Whiteboard</div>
+                    <div className="heading">Whiteboard</div>
                 </div>
-                <div style={{fontSize: "13px"}}>
+                <div className="text_container">
                     <div>
                         Hi, I am a Frontend Developer. This is one of my personal projects where I have built a basic whiteboard with NextJS, Tailwind CSS and Shadcn UI for frontend, and Convex tool for backend.
                     </div>
-                    <div style={{marginBottom: "2.5rem"}}>
-                        <div style={{marginTop: "0.6rem", display: "flex", alignItems: "center", gap: "8px"}}><CheckCircle2 height={20}/>Toolbar with Text, Shapes, Sticky Notes, and Pencil</div>
-                        <div style={{marginTop: "0.6rem", display: "flex", alignItems: "center", gap: "8px"}}><CheckCircle2 height={20}/>icon: Multiple users can collaborate in real-time</div>
+                    <div className="bullet-point_container">
+                        <div className="bullet-point"><CheckCircle2 height={20}/>Toolbar with Text, Shapes, Sticky Notes, and Pencil</div>
+                        <div className="bullet-point"><CheckCircle2 height={20}/>Multiple users can collaborate in real-time</div>
                     </div>
-                    <div style={{width: "100%", gap: "44px", alignItems: "center"}} className="flex">
+                    <div className="cta-buttons">
                         <SignInButton>
                             <Button>Sign in</Button>
                         </SignInButton>
-                        <div style={{gap: "14px"}} className="flex">
+                        <div className="socials">
                             <Link href="https://www.linkedin.com/in/saswati-somya-mahanta/">
                                 <LinkedInLogoIcon height={25} width={25}/>
                             </Link>

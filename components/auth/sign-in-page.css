@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+
+.main_container {
+    background-color: #FCFEFD;
+    height: 100vh;
+}
+
+.girl_image {
+    position: absolute;
+    bottom: 0px;
+    right: 108px;
+    height: 750px;
+    width: 666.57px;
+}
+
+.content_container {
+    background-color: transparent;
+    width: 43rem;
+    translate: 14rem 17rem;
+}
+
+/* Dancing script - Looks elegant*/
+/* Permanent Marker - looks handwritten, gives a white board feeling */
+.heading {
+    font-size: 9.5rem;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 800;
+}
+
+.text_container {
+    font-size: 13px;
+}
+
+.bullet-point_container {
+    margin-bottom: 2.5rem;
+}
+
+.bullet-point {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0.6rem;
+}
+
+.cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    width: 100%;
+
+}
+
+.socials {
+    display: flex;
+    gap: 14px;
+}
+
+@media (width >= 1600px) {
+    .content_container {
+        translate: 23rem 20rem;
+    }
+
+    .girl_image {
+        right: 15rem;
+        height: 886px;
+        width: 787.44px;
+    }
+
+}
+
+@media (width < 1250px ) {
+    .main_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content_container {
+        translate: 0;
+        width: 70%;
+    }
+
+    .girl_image {
+        display: none;
+    }
+
+    .heading {
+        font-size: 7rem;
+    }
+    
+}
+
+@media  (width < 850px) {
+    .heading {
+        font-size: 3.6rem;
+        margin-top: -1rem;
+        margin-bottom: 0rem;
+    }
+
+    .girl_image {
+        display: none;
+    }
+
+    .text_container, .sub-heading {
+        font-size: 10px;
+    }
+}
+
+
