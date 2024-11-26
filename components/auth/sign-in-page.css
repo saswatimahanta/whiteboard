@@ -1,28 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
 
 .main_container {
-    background-color: #FCFEFD;
-    height: 100vh;
+    background-color: #f2f2f2;
+    height: 103.5vh;
 }
 
 .girl_image {
     position: absolute;
     bottom: 0px;
     right: 108px;
-    height: 750px;
-    width: 666.57px;
+    top: 90px;
+    height: 600px;
+    width: 600px;
 }
 
 .content_container {
     background-color: transparent;
     width: 43rem;
-    translate: 14rem 17rem;
+    translate: 9rem 17rem;
 }
 
 /* Dancing script - Looks elegant*/

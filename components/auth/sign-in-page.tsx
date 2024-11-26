@@ -2,7 +2,7 @@
 
 import "./sign-in-page.css";
 import { SignInButton } from "@clerk/nextjs";
-import girl from "../../public/Chibi Anime Girl DPs_ Adorable & Fun 1.png";
+import girl from "../../public/miro2.jpg";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { CheckCircle2 } from "lucide-react";
